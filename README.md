@@ -6,7 +6,7 @@
 
 ## Installation
 
-1. `git clone git@github.com:forter/node-skeleton.git`
+1. `git clone git@github.com:ranasulin/chatroom.git`
 2. `cd node-skeleton`
 3. `npm install`
 3. `npm start`
