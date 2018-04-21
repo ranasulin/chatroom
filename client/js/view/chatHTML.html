@@ -1,0 +1,27 @@
+<div class="chat-wrapper">
+    <div class="info-area">
+        <div class="setting-area">
+            <h1>Connected Users</h1>
+            <div ng-repeat="(name, user) in users" class="user">
+                <img ng-src="{{user.avatar}}" class="avatar">
+                <div class="username">{{name}}</div>
+                <span ng-if="name === loggedInUser">(Me)</span>
+            </div>
+        </div>
+    </div>
+    <div class="conversation">
+        <div class="conversation-area" ng-style="{'background-image': 'url({{selectedSkin.background}})'}">
+            <div ng-repeat='message in messages' class="messgesArea" ng-class="{'align-center': {{message.type === 'du'}} || {{message.type === 'nu'}}}">
+                <message info="message" ng-if="message.type === 'Q'" ng-class="{'my-message': {{message.author === loggedInUser}}}" ng-click="answer(message)"></message>
+                <message info="message.reply" ng-if="message.reply" ng-class="{'my-message': {{message.author === loggedInUser}}}"></message>
+                <div ng-if="message.type === 'nu'" class="new-user">{{message.newUser}} has joined!</div>
+                <div ng-if="message.type === 'du'" class="new-user">{{message.user}} has left!</div>
+            </div>
+            <div id="bottom"></div>
+        </div>
+        <form ng-submit="send()" class="input-area" id="inputArea">
+            <input placeholder="Question" ng-model="messageToSend.text" focus-me="focus" ng-if="!replyMode">
+            <input placeholder="Answer" ng-model="messageToSend.reply" focus-me="focus" ng-if="replyMode">
+        </form>
+    </div>
+</div>

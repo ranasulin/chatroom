@@ -1,0 +1,83 @@
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    padding: 200px 0;
+}
+.funny-stuff {
+    text-align: center;
+}
+.conversation-area {
+    border-radius: 10px;
+    flex: 10;
+    overflow: scroll;
+    margin-top: 1%;
+}
+
+.input-area {
+    flex:1;
+    margin-top: 0.5%;
+}
+
+.input-area input {
+    background-color: #ffd0e6;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.chat-wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+}
+
+.conversation {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.info-area {
+    flex: 1;
+}
+
+.new-user{
+    background-color: white;
+    border: 1px solid #666666;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 1%;
+    margin: 1%;
+    color: #565656;
+}
+
+.setting-area {
+    color: #565656;
+}
+
+.setting-area .user {
+    padding: 2%;
+    margin-right: 3%;
+    border-bottom: 1px solid #666666;
+}
+
+.setting-area .avatar {
+    padding: 1%;
+    border-radius: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.setting-area .username {
+    display: inline-block;
+    padding: 1%;
+    margin: 1%;
+}
+
+.align-center {
+    text-align: center;
+}

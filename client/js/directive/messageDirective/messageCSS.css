@@ -1,0 +1,30 @@
+.message-body {
+    background-color: white;
+    border: 1px solid #666666;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 1%;
+    margin: 1%;
+}
+
+.message-body .text{
+    font-size: 18px;
+    margin-right: 5px;
+    color: #565656;
+}
+
+.message-body .time{
+    font-size: 10px;
+    color: #a5a5a5;
+}
+
+.avatar{
+    padding: 1%;
+    border-radius: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.my-message{
+    direction: rtl;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "node-skeleton",
+  "version": "0.0.0",
+  "description": "NodeJs + express + angularJs skeleton.",
+  "main": "app.js",
+  "author": "OriW",
+  "engine": "node v6.4",
+  "dependencies": {
+    "angular-socket-io": "^0.7.0",
+    "express": "~4.6.1",
+    "faker": "^4.1.0",
+    "moment": "^2.22.1",
+    "npm-watch": "^0.3.0",
+    "socket.io": "^2.1.0"
+  },
+  "watch": {
+    "start": "server/*.js"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "watch": "npm-watch"
+  }
+}
